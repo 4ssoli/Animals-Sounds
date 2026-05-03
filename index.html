@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Sounds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Animal Sounds</h1>
+        <p class="instructions">Click an animal or press <strong>C</strong> for Cat, <strong>D</strong> for Dog, <strong>B</strong> for Bird.</p>
+
+        <section class="animals">
+            <div class="animal-card" data-key="c" data-sound="cat" tabindex="0">
+                <img src="images/cat.jpg" alt="Cat">
+                <span>Cat (C)</span>
+            </div>
+            <div class="animal-card" data-key="d" data-sound="dog" tabindex="0">
+                <img src="images/dog.jpg" alt="Dog">
+                <span>Dog (D)</span>
+            </div>
+            <div class="animal-card" data-key="b" data-sound="bird" tabindex="0">
+                <img src="images/bird.jpg" alt="Bird">
+                <span>Bird (B)</span>
+            </div>
+        </section>
+
+        <audio id="sound-cat" src="sounds/cat.wav"></audio>
+        <audio id="sound-dog" src="sounds/dog.wav"></audio>
+        <audio id="sound-bird" src="sounds/bird.wav"></audio>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
